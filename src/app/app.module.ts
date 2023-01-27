@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle'
 import { SharedModule } from './shared/shared.module';
+import { StudentModule } from './student/student.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     MatSlideToggleModule,
-    SharedModule
+    SharedModule,
+    StudentModule
   ],
   providers: [],
   bootstrap: [AppComponent]

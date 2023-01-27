@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StudenRoutingModule } from './student-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MaterialExampleModule } from 'src/material.module';
 
 
 
@@ -11,7 +12,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   imports: [
     CommonModule,
-    StudenRoutingModule
+    StudenRoutingModule,
+    MaterialExampleModule
   ]
 })
 export class StudentModule { }
