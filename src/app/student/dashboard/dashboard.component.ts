@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Role } from 'src/app/role';
+import { Document } from '../document';
 import { Education } from '../education';
 import { Experience } from '../experience';
 
@@ -13,13 +14,18 @@ export class DashboardComponent {
 
   private student = { id: 1, name: 'emad', email: "emad@youcode.ma", role: Role.student }
 
-  education: Education[] = [
+  educations: Education[] = [
     { id: 1, student: this.student, institution: 'cadi ayyad', degree: 'bachelor', startDate: new Date(), filed: 'scinece', endDate: null },
     { id: 1, student: this.student, institution: 'cadi ayyad', degree: 'bachelor', startDate: new Date(), filed: 'scinece', endDate: null }
   ]
-  experience: Experience[] = [
+  experiences: Experience[] = [
     { student: this.student, company: "Microsoft", poste: "backend developper", startDate: new Date(), endDate: new Date() },
     { student: this.student, company: "Microsoft", poste: "backend developper", startDate: new Date(), endDate: new Date() },
     { student: this.student, company: "Microsoft", poste: "backend developper", startDate: new Date(), endDate: new Date() },
   ]
+
+  documents: Document[] = [
+    { student: this.student, previewImage: "https://static.vecteezy.com/system/resources/thumbnails/012/507/318/small/black-friday-season-flyer-template-with-2-image-placeholder-creative-clean-and-multipurpose-fashion-sale-design-template-with-a4-size-vector.jpg", title: "imad_ouchaib_cv.pdf", type: "cv" }
+  ]
+
 }

@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { StudenRoutingModule } from './student-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MaterialExampleModule } from 'src/material.module';
+import { DocumentPreviewComponent } from './document-preview/document-preview.component';
 
 
 
 @NgModule({
   declarations: [
-    DashboardComponent
+    DashboardComponent,
+    DocumentPreviewComponent
   ],
   imports: [
     CommonModule,

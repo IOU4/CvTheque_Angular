@@ -1,22 +1,23 @@
+<p class="my-4 text-xl font-medium text-neutral-600 bg-white"> Student Info: </p>
 <section class="flex w-full gap-2">
-  <div class="px-4 py-3 rounded-md border w-fit">
+  <div class="px-4 py-3 rounded-md border w-fit h-min">
     <div class="relative pb-2 border-b border-gray-600">
-      <span class="pr-3 text-lg font-medium text-neutral-600 bg-white"> skills: </span>
+      <span class="pr-3 text-xl font-medium text-neutral-600 bg-white"> Skills </span>
     </div>
     <ul class="flex gap-2 mt-2">
       <li *ngFor="let skill of skills" class="border p-2 rounded-md "> {{skill}} </li>
     </ul>
   </div>
-  <div class="px-4 py-3 rounded-md border w-fit">
+  <div class="px-4 py-3 rounded-md border w-fit min-w-[20rem] h-min">
     <div class="relative pb-2 border-b border-gray-600">
-      <span class="pr-3 text-lg font-medium text-neutral-600 bg-white"> Education: </span>
+      <span class="pr-3 text-xl font-medium text-neutral-600 bg-white"> Education </span>
     </div>
     <ul class="flex md:flex-col lg:divide-y lg:divide-gray-100">
-      <li *ngFor="let edu of education" class="sm:flex lg:items-end group">
+      <li *ngFor="let edu of educations" class="sm:flex lg:items-end group">
         <div class="py-4">
           <span class="text-sm text-gray-500">{{edu.startDate | date:'shortDate'}} - {{edu.endDate ?? 'present'}}</span>
           <p class="text-lg font-medium leading-6">
-            <span class="text-xl text-gray-800 group-hover:text-gray-500 lg:text-2xl">{{edu.degree }} in
+            <span class="text-lg text-gray-800 group-hover:text-gray-500 ">{{edu.degree }} in
               {{edu.filed}}</span>
           </p>
           <p class="text-lg text-gray-500">{{edu.institution}}</p>
@@ -24,21 +25,29 @@
       </li>
     </ul>
   </div>
-  <div class="px-4 py-3 rounded-md border w-fit">
+  <div class="px-4 py-3 rounded-md border w-fit min-w-[20rem] h-min">
     <div class="relative pb-2 border-b border-gray-600">
-      <span class="pr-3 text-lg font-medium text-neutral-600 bg-white"> Experience: </span>
+      <span class="pr-3 text-xl font-medium text-neutral-600 bg-white"> Experience </span>
     </div>
     <ul class="flex md:flex-col lg:divide-y lg:divide-gray-100">
-      <li *ngFor="let exp of experience" class="sm:flex lg:items-end group">
+      <li *ngFor="let exp of experiences" class="sm:flex lg:items-end group">
         <div class="py-4">
           <span class="text-sm text-gray-500">{{exp.startDate| date:'shortDate'}} - {{exp.endDate |
             date:'shortDate'}}</span>
           <p class="text-lg font-medium leading-6">
-            <span class="text-xl text-gray-800 group-hover:text-gray-500 lg:text-2xl">{{exp.poste}} </span>
+            <span class="text-lg text-gray-800 group-hover:text-gray-500">{{exp.poste}} </span>
           </p>
           <p class="text-lg text-gray-500">{{exp.company}}</p>
         </div>
       </li>
     </ul>
   </div>
+</section>
+<p class="my-4 text-xl font-medium text-neutral-600 bg-white"> Documents: </p>
+<section>
+  <ul class="flex flex-col md:felx-row">
+    <li *ngFor="let doc of documents">
+      <app-document-preview [document]="doc"></app-document-preview>
+    </li>
+  </ul>
 </section>
