@@ -6,6 +6,7 @@ import { MaterialExampleModule } from 'src/material.module';
 import { DocumentPreviewComponent } from './document-preview/document-preview.component';
 import { CvViewerComponent } from './cv-viewer/cv-viewer.component';
 import { NgxDocViewerModule } from 'ngx-doc-viewer';
+import { MessageItemComponent } from './message-item/message-item.component';
 
 
 
@@ -13,7 +14,8 @@ import { NgxDocViewerModule } from 'ngx-doc-viewer';
   declarations: [
     DashboardComponent,
     DocumentPreviewComponent,
-    CvViewerComponent
+    CvViewerComponent,
+    MessageItemComponent
   ],
   imports: [
     CommonModule,

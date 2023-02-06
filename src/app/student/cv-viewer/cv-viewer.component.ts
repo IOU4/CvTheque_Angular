@@ -1,3 +1,4 @@
+import { Role } from './../../role';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./cv-viewer.component.css']
 })
 export class CvViewerComponent {
+
+  // Role:string = "cme";
+  Role:string = "student";
 
 }
