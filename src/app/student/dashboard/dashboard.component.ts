@@ -25,7 +25,8 @@ export class DashboardComponent {
   ]
 
   documents: Document[] = [
-    { student: this.student, previewImage: "https://static.vecteezy.com/system/resources/thumbnails/012/507/318/small/black-friday-season-flyer-template-with-2-image-placeholder-creative-clean-and-multipurpose-fashion-sale-design-template-with-a4-size-vector.jpg", title: "imad_ouchaib_cv.pdf", type: "cv" }
+    { student: this.student, previewImage: "https://static.vecteezy.com/system/resources/thumbnails/012/507/318/small/black-friday-season-flyer-template-with-2-image-placeholder-creative-clean-and-multipurpose-fashion-sale-design-template-with-a4-size-vector.jpg", title: "imad_ouchaib_cv.pdf", type: "cv", url: "https://drive.google.com/file/d/13RVgmP5CuavvlICd3ScEjHpemNXKcutq/view?usp=share_link" },
+    { student: this.student, previewImage: "https://static.vecteezy.com/system/resources/thumbnails/012/507/318/small/black-friday-season-flyer-template-with-2-image-placeholder-creative-clean-and-multipurpose-fashion-sale-design-template-with-a4-size-vector.jpg", title: "houssam-eddine_cv.pdf", type: "cv", url: "https://docs.google.com/document/d/1-NbuxxgsukztcvQHyGEkCVagA-ZUGUu528jzSNcvfV0/edit?usp=sharing" }
   ]
 
 }
