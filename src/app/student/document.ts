@@ -6,4 +6,6 @@ export interface Document {
   previewImage: string
   title: string
   type: string
+  //+url
+  url:string
 }

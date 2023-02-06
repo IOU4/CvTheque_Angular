@@ -1,5 +1,6 @@
 import { Role } from './../../role';
 import { Component } from '@angular/core';
+import { DocService } from 'src/app/core/service/doc.service';
 
 @Component({
   selector: 'app-cv-viewer',
@@ -10,5 +11,7 @@ export class CvViewerComponent {
 
   // Role:string = "cme";
   Role:string = "student";
+  constructor(private docService:DocService){}
 
+  url?:string= this.docService.docUrl;
 }

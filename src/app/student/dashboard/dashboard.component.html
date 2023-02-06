@@ -45,7 +45,7 @@
 </section>
 <p class="my-4 text-xl font-medium text-neutral-600 bg-white"> Documents: </p>
 <section>
-  <ul class="flex flex-col md:felx-row">
+  <ul class="flex flex-row md:felx-row">
     <li *ngFor="let doc of documents">
       <app-document-preview [document]="doc"></app-document-preview>
     </li>

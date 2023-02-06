@@ -9,7 +9,7 @@ const childRoutes: Routes = [
       { path: 'dashboard', component: DashboardComponent }
     ]
   },
-  { path: 'test', component: CvViewerComponent }
+  { path: 'doc-viewer', component: CvViewerComponent }
 ];
 
 @NgModule({
